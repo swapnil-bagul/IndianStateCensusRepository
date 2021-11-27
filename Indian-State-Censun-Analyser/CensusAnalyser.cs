@@ -6,6 +6,7 @@ namespace Indian_State_Censun_Analyser
 {
     public class CensusAnalyser
     {
+        //range of constant
         public enum Country
         {
             INDIA, US
@@ -16,6 +17,7 @@ namespace Indian_State_Censun_Analyser
             dataMap = new CsvAdapterFactory().LoadCsvData(country, csvFilePath, dataHeaders);
             return dataMap;
         }
+
 
     }
 }

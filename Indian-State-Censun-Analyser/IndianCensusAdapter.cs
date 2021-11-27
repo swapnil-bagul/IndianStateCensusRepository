@@ -7,7 +7,9 @@ namespace Indian_State_Censun_Analyser
 {
     public class IndianCensusAdapter : CensusAdapter
     {
+        //Array
         string[] censusData;
+        //used dictionary for key value pair
         Dictionary<string, CensusDTO> dataMap;
 
         public Dictionary<string, CensusDTO> LoadCensusData(string csvFilePath, string dataHeaders)
@@ -16,16 +18,17 @@ namespace Indian_State_Censun_Analyser
             censusData = GetCensusData(csvFilePath, dataHeaders);
             foreach (string data in censusData.Skip(1))
             {
+
                 if (!data.Contains(","))
                 {
                     throw new CensusAnalyserException("File contains wrong Delimiter", CensusAnalyserException.ExceptionType.INCORRECT_DELIMITER);
                 }
                 string[] column = data.Split(",");
-                if (csvFilePath.Contains("IndianStateCode.csv"))
+                if (csvFilePath.Contains("IndiaStateCode.csv"))
                 {
                     dataMap.Add(column[1], new CensusDTO(new IndianStateCode(column[0], column[1], column[2], column[3])));
                 }
-                if (csvFilePath.Contains("IndianStateCensusData.csv"))
+                if (csvFilePath.Contains("IndiaStateCensusData.csv"))
                 {
                     dataMap.Add(column[1], new CensusDTO(new IndianStateCensusData(column[0], column[1], column[2], column[3])));
                 }

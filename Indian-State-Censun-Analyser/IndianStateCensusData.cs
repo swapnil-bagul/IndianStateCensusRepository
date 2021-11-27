@@ -10,7 +10,7 @@ namespace Indian_State_Censun_Analyser
         public long population;
         public long area;
         public long density;
-
+        //initialise data
         public IndianStateCensusData(string state, string population, string area, string density)
         {
             this.state = state;
