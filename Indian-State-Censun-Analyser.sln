@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indian-State-Censun-Analyser", "Indian-State-Censun-Analyser\Indian-State-Censun-Analyser.csproj", "{5A7398A1-827D-4303-A074-756AC30456AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Indian-State-Censun-Analyser", "Indian-State-Censun-Analyser\Indian-State-Censun-Analyser.csproj", "{5A7398A1-827D-4303-A074-756AC30456AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{67C650E0-CE82-4AF8-987A-8D4B7DB63409}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5A7398A1-827D-4303-A074-756AC30456AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A7398A1-827D-4303-A074-756AC30456AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A7398A1-827D-4303-A074-756AC30456AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C650E0-CE82-4AF8-987A-8D4B7DB63409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C650E0-CE82-4AF8-987A-8D4B7DB63409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C650E0-CE82-4AF8-987A-8D4B7DB63409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C650E0-CE82-4AF8-987A-8D4B7DB63409}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
